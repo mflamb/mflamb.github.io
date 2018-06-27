@@ -18,154 +18,144 @@
 
 <body>
 
-  <div class="row">
-    <div class="orbit clean-hero-slider" role="region" aria-label="Favorite Space Pictures" data-orbit>
-      <div class="orbit-wrapper">
-        <div class="orbit-controls">
-          <button class="orbit-previous">
-            <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-          <button class="orbit-next">
-            <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-        </div>
-        <ul class="orbit-container">
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="images/island-water-hut.webp" alt="Hut on the Caribbean">
-              <figcaption class="orbit-caption">
-                <h3>Michael Lamb | Full Stack Web Developer</h3>
-                <p>I'm passionate about learning everything I can about software architecture, all the way down to networks
-                  and the metal.</p>
-                <a href="#about-me" class="button yellow">About Me</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="images/caribbean-dock.jpg" alt="Caribbean dock and horizon">
-              <figcaption class="orbit-caption">
-                <h3>Responsive User Interfaces</h3>
-                <p>They're a
-                  <em>must</em> in today's web. Whether it's CSS Grids, Bootstrap or Foundation, I love to deliver intuitive
-                  and mobile-friendly user experiences.</p>
-                <a href="#my-work" class="button yellow">Projects</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="images/beach-sunset.jpg" alt="Caribbean sunset from the ocean">
-              <figcaption class="orbit-caption">
-                <h3>MVC Frameworks and Databases</h3>
-                <p>Backend systems are my playground. Raised in Ruby on Rails and Postgres. Currently diving deep into the server-side
-                  JavaScript ecosystem by learning MongoDB and NodeJS</p>
-                <a href="#continuous-improvement" class="button yellow">Here's What I'm Doing</a>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+  <br>
+
+  <div id="container">
+
+    <ul class="menu menu-hover-lines">
+      <li class="active">
+        <a href="#about-me">About Me</a>
+      </li>
+      <li>
+        <a href="#my-work">My Work</a>
+      </li>
+      <li>
+        <a href="#continuous-improvement">Continuous Improvement</a>
+      </li>
+    </ul>
+
+    <!-- <br> -->
+    <hr>
+    <br>
+    <br>
+    <!-- <br> -->
+    <div id="section-b" class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+      <div class="cell large-5">
+        <img class="mikesahar" src="images/mike.jpg">
       </div>
-      <nav class="orbit-bullets">
-        <button class="is-active" data-slide="1">
-          <span class="show-for-sr">Michael Lamb, Full Stack Web Developer</span>
-        </button>
-        <button data-slide="2">
-          <span class="show-for-sr">Responsive User Intefaces</span>
-        </button>
-        <button data-slide="3">
-          <span class="show-for-sr">MVC Frameworks and Databases</span>
-        </button>
-      </nav>
-    </div>
-  </div>
+      <a id="about-me"></a>
+      <div class="cell large-7">
+        <h1>Mike Lamb
+          <small>crazy about growth</small>
+        </h1>
+        <p>Hi, my name is Mike. I'm a web developer with a natural inclination to solve complex problems. </p>
+        <p>I'm curious about the kinds of things that most people find inaccessible and forbidding.</p>
+        <p>I'm the kind of guy who goes into Postgres manually and starts teaching himself SQL commands for fun.</p>
+        <p>I'm the guy who fell in love with Git and the Command Line from day one.</p>
+        <p>I thrive on a formidable challenge. I strive to continually seek out greater ones in my professional endeavors because
+          I love the growth that comes under scary conditions.</p>
+        <p> I discovered a love of coding completely by accident. At my last job as a Navy SAP Support Contractor, I was taking
+          Excel tutorials to level up my skills when I got exposed to writing macros with VBA. Having been an English major
+          in college, I was always fascinated by the structure of language and how subtle changes to it can have such vastly
+          different impacts.</p>
+        <p>Over the next six months my interest grew increasingly serious, and I took tutorials ranging from the fundamentals
+          of
+          <a href="https://www.edx.org/course/logic-and-computational-thinking">"Logic and Computational Thinking"</a> all the way to Ruby and JavaScript beginner courses.</p>
+        <p>Since that time, I've been committed to dedicating my professional life to the pursuit of developing and perfecting
+          a true craft. </p>
 
-  <hr>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <a id="my-work"></a>
+    <h1 class="text-center">My Work</h1>
+    <br>
+    <br>
+    <br>
+    <div class="grid-x grid-margin-x grid-padding-x">
+      <div class="cell large-3 medium-3">
+        <h3>My Brother's Keeper</h3><br>
+        <a href="https://my-brothers-keeper.herokuapp.com/" class="primary button">View Live</a>
+        <a href="https://github.com/my-brothers-keeper/my-brothers-keeper" class="primary button">GitHub Repo</a>
+        <p>Winner of Code for Philly's 2018 Month-long Launchpad Hackathon. I serve as Project Lead and developer for this open
+          source web app designed to enable charity organizations to let the community know what items they most urgently
+          need. It also makes the information easily accessible for donors.</p>
+      </div>
+      <div class="cell large-3 medium-3">
+        <h3>Direct Effect</h3><br>
+        <a href="https://direct-effect.herokuapp.com/" class="primary button">View Live</a>
+        <a href="https://github.com/mflamb/direct-effect" class="primary button">GitHub Repo</a>
+        <p>It wasn't enough for me to take my project idea to Code for Philly's 2018 Launchpad Hackathon and build it with a
+          team: I wanted to build the idea on my own at the same time, so I could learn every aspect of what it took. I built
+          a GeoJSON API from my database for the map display, and used two Devise models to create Admin and User layers.</p>
+      </div>
+      <div class="cell large-3 medium-3">
+        <h3>searchCloud</h3><br>
+        <a href="http://www.mflamb.com/soundcloud-api-jukebox/" class="primary button">View Live</a>
+        <a href="https://github.com/mflamb/soundcloud-api-jukebox" class="primary button">GitHub Repo</a>
+        <p>A searchable custom jukebox powered by Soundcloud's REST API. Users can search by keyword for songs, play a song
+          and display artist/track information with a click. It was designed so that song selection wouldn't depend on iterating
+          through an array. This project has a special place in my heart because it was my breakthrough with writing clean
+          JavaScript for the first time!</p>
+      </div>
+      <div class="cell large-3 medium-3">
+        <h3>hangWheel</h3><br>
+        <a href="http://www.mflamb.com/capstone/" class="primary button">View Live</a>
+        <a href="https://github.com/mflamb/capstone" class="primary button">GitHub Repo</a>
+        <p>An early JavaScript project based on the hangman or Wheel of Fortune style of game. While this project was an achievement
+          at the time and it is fully functional, note that comparing the code to the searchCloud project shows a lot of
+          growth that happened in only two weeks between the two projects.</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
 
-  <div id="section-b" class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-    <div class="cell large-5">
-      <img class="mikesahar" src="images/mike.jpg">
-    </div>
-    <a id="about-me"></a>
-    <div class="cell large-7">
-      <h1>Mike Lamb
-        <small>crazy about growth</small>
-      </h1>
-      <p>Hi, my name is Mike.  I'm a web developer with a natural inclination to solve complex problems. </p>
-      <p>I'm curious about the kinds of things that most people find inaccessible and forbidding.</p>
-      <p>I'm the kind of guy who goes into Postgres manually and starts teaching himself SQL commands for fun.</p>
-      <p>I'm the guy who fell in love with Git and the Command Line from day one.</p>
-      <p>I thrive on a formidable challenge.  I strive to continually seek out greater ones in my professional endeavors because I love the growth that comes under scary conditions.</p>
-      <p> I discovered a love of coding completely by accident.  At my last job as a Navy SAP Support Contractor, I was taking Excel tutorials to level up my skills when I got exposed to writing macros with VBA.  Having been an English major in college, I was always fascinated by the structure of language and how subtle changes to it can have such vastly different impacts.</p>
-      <p>Over the next six months my interest grew increasingly serious, and I took tutorials ranging from the fundamentals of <a href="https://www.edx.org/course/logic-and-computational-thinking">"Logic and Computational Thinking"</a> all the way to Ruby and JavaScript beginner courses.</p>
-      <p>Since that time, I've been committed to dedicating my professional life to the pursuit of developing and perfecting a true craft.  </p>
-  
-    </div>
-  </div>
+    <a id="continuous-improvement"></a>
+    <h1 class="text-center">Continuous Improvement</h1>
+    <br>
+    <br>
+    <br>
+    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+      <div class="cell large-4 medium-4">
+        <h3 class="text-center">
+          <a href="https://foundation.zurb.com/learn/foundation-6-4-xy-grid.html" class="primary button">Zurb Foundation CSS</a>
+        </h3>
+        <p>On Friday I knew nothing about the Foundation CSS Framework. By Monday I'd used it to build this site. It's definitely
+          a refreshing change of pace from Bootstrap in terms of visual aesthetic. It also lends itself much more easily
+          to customization.</p>
+      </div>
+      <div class="cell large-4 medium-4">
+        <h3 class="text-center">
+          <a href="https://university.mongodb.com/courses/M101P/about" class="primary button">MongoDB University</a>
+        </h3>
+        <p>MongoDB has a robust collection of free online classes to educate developers about their product. When I finish The
+          MongoDB for Developers course, I plan to enroll for the exam and become a MongoDB Certified Professional!</p>
+      </div>
+      <div class="cell large-4 medium-4">
+        <h3 class="text-center">
+          <a href="https://pirple.thinkific.com/" class="primary button">NodeJS Master Class</a>
+        </h3>
+        <p>A deep dive into the native capabilities of NodeJS using absolutely ZERO 3rd-party libraries or frameworks. It's
+          well-known that NPM is bloated with redundant packages, but this course aims at teaching true mastery of Node by
+          demonstrating just how much can be done without the need for dependencies.</p>
+      </div>
 
-  <hr>
-  <a id="my-work"></a>
-  <h1 class="text-center">My Work</h1>
-  <div class="grid-x grid-margin-x grid-padding-x">
-    <div class="cell large-3 medium-3">
-      <h3>My Brother's Keeper</h3>
-      <a href="https://my-brothers-keeper.herokuapp.com/" class="success button hollow">View Live</a>
-      <a href="https://github.com/my-brothers-keeper/my-brothers-keeper" class="success button hollow">GitHub Repo</a>
-      <p>Winner of Code for Philly's 2018 Month-long Launchpad Hackathon. I serve as Project Lead and developer for this open
-        source web app designed to enable charity organizations to let the community know what items they most urgently need.
-        It also makes the information easily accessible for donors.</p>
-    </div>
-    <div class="cell large-3 medium-3">
-      <h3>Direct Effect</h3>
-      <a href="https://direct-effect.herokuapp.com/" class="success button hollow">View Live</a>
-      <a href="https://github.com/mflamb/direct-effect" class="success button hollow">GitHub Repo</a>
-      <p>It wasn't enough for me to take my project idea to Code for Philly's 2018 Launchpad Hackathon and build it with a team:
-        I wanted to build the idea on my own at the same time, so I could learn every aspect of what it took. I built a GeoJSON
-        API from my database for the map display, and used two Devise models to create Admin and User layers.</p>
-    </div>
-    <div class="cell large-3 medium-3">
-      <h3>searchCloud</h3>
-      <a href="http://www.mflamb.com/soundcloud-api-jukebox/" class="success button hollow">View Live</a>
-      <a href="https://github.com/mflamb/soundcloud-api-jukebox" class="success button hollow">GitHub Repo</a>
-      <p>A searchable custom jukebox powered by Soundcloud's REST API. Users can search by keyword for songs, play a song and
-        display artist/track information with a click. It was designed so that song selection wouldn't depend on iterating
-        through an array. This project has a special place in my heart because it was my breakthrough with writing clean
-        JavaScript for the first time!</p>
-    </div>
-    <div class="cell large-3 medium-3">
-      <h3>hangWheel</h3>
-      <a href="http://www.mflamb.com/capstone/" class="success button hollow">View Live</a>
-      <a href="https://github.com/mflamb/capstone" class="success button hollow">GitHub Repo</a>
-      <p>An early JavaScript project based on the hangman or Wheel of Fortune style of game. While this project was an achievement
-        at the time and it is fully functional, note that comparing the code to the searchCloud project shows a lot of growth
-        that happened in only two weeks between the two projects.</p>
-    </div>
-  </div>
 
-  <hr>
 
-  <a id="continuous-improvement"></a>
-  <h1 class="text-center">Continuous Improvement</h1>
-  <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-    <div class="cell large-4 medium-4">
-      <h3 class="text-center"><a href="https://foundation.zurb.com/learn/foundation-6-4-xy-grid.html" class="success button hollow">Zurb Foundation CSS</a></h3>
-      <p>On Friday I knew nothing about the Foundation CSS Framework.  By Monday I'd used it to build this site.  It's definitely a refreshing change of pace from Bootstrap in terms of visual aesthetic.  It also lends itself much more easily to customization.</p>
-    </div>
-    <div class="cell large-4 medium-4">
-      <h3 class="text-center"><a href="https://university.mongodb.com/courses/M101P/about" class="success button hollow">MongoDB University</a></h3>
-      <p>MongoDB has a robust collection of free online classes to educate developers about their product.  When I finish The MongoDB for Developers course, I plan to enroll for the exam and become a MongoDB Certified Professional!</p>
-    </div>
-    <div class="cell large-4 medium-4">
-      <h3 class="text-center"><a href="https://pirple.thinkific.com/" class="success button hollow">NodeJS Master Class</a></h3>
-      <p>A deep dive into the native capabilities of NodeJS using absolutely ZERO 3rd-party libraries or frameworks.  It's well-known that NPM is bloated with redundant packages, but this course aims at teaching true mastery of Node by demonstrating just how much can be done without the need for dependencies.</p>
+      <div class="spacer"></div>
+
     </div>
 
-   
-
-  <div class="spacer"></div>
-
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
